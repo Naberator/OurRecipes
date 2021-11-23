@@ -29,6 +29,7 @@ Architecture: // TODO add proper tech design
 firebase db is [NoSQL](https://www.mongodb.com/nosql-explained). I am favouring a NoSQL model simply because my day job uses relational.
 let's start with a simple document based store modeling
 
+```
 {
   _id: 123456,
   name: Ron,
@@ -46,3 +47,4 @@ let's start with a simple document based store modeling
   created: 2021-01-29,
   groceriesDayOfWeek: 10, // every second Tuesday
 }
+```
