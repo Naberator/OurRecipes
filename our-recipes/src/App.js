@@ -1,5 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import { initializeApp } from 'firebase/app';
+
+
+const firebaseConfig = {
+
+};
+
+const firebase = initializeApp(firebaseConfig);
 
 function App() {
   return (
