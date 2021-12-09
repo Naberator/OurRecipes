@@ -1,0 +1,6 @@
+
+node_modules
+package-lock.json
+our-recipes/ui-debug.log
+our-recipes/firestore-debug.log
+our-recipes/.firebaserc

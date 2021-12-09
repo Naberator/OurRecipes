@@ -29,22 +29,31 @@ Architecture: // TODO add proper tech design
 firebase db is [NoSQL](https://www.mongodb.com/nosql-explained). I am favouring a NoSQL model simply because my day job uses relational.
 let's start with a simple document based store modeling
 
+Users collection
 ```
 {
   _id: 123456,
   name: Ron,
   friends: [123457, 123458],
   recipes: [
-      {
-        _id: 654321,
-        url: "https://www.samplewebsiteok.com/",
-        images: {
-          thumbnail: ref,
-          base: ref,
-        },
-      },
+    ref1(recipes collection),
   ],
   created: 2021-01-29,
   groceriesDayOfWeek: 10, // every second Tuesday
 }
+```
+
+Recipes collection
+```
+{
+  _id: 654321,
+  url: "https://www.samplewebsiteok.com/",
+  images: {
+    thumbnail: ref,
+    base: ref,
+  },
+  performer: 123456,
+  creation_date: 2021-01-29 01:00:00,
+  update_time: 2021-01-29 01:01:00,
+},
 ```
